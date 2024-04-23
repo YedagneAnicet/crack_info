@@ -22,8 +22,6 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
 
 ## Installation de Préline
 
-1. **Installation via npm**
-
    ```bash
    npm install preline
    ```
