@@ -23,11 +23,11 @@ if (isset($_POST['login'])) {
             $_SESSION['user_email'] = $user['email'];
 
             // Redirection vers une page de succès ou le tableau de bord de l'utilisateur
-            header('location: ../html/dashboard.html');
+            header('location: ../pages/dashboard.php');
         } else {
             // Authentification échouée, afficher un message d'erreur
             $_SESSION['login_error'] = "Email ou mot de passe incorrect.";
-            header('location: ../html/login.html');
+            header('location: ../pages/login.html');
         }
 
     } catch (PDOException $e) {

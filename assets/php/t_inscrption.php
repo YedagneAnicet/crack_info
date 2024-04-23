@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
         // Exécution de la requête
         $stmt->execute();
 
-        header('location: ../html/login.html');
+        header('location: ../pages/login.html');
 
     } catch (PDOException $e) {
         echo "Erreur lors de l'enregistrement : " . $e->getMessage();
